@@ -1,6 +1,6 @@
 :root {
-  --heading-font: Cursive;
-  --body-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --heading-font: 'Patrick Hand', 'Handlee', 'Kalam', cursive;
+  --body-font: 'Comic Neue', 'Patrick Hand', 'Kalam', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 * {
