@@ -1,0 +1,191 @@
+:root {
+  --heading-font: Cursive;
+  --body-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {  
+  margin: 0 auto; 
+  display: grid;
+  grid-template: 20% 75% 15% / 1fr 1fr 1fr;  
+  max-width: 840px;
+}
+
+header {
+    display: flex;
+    font-family: var(--heading-font);
+    justify-content: center;
+    color: #eee;
+}
+
+header {
+  position: relative;
+  background: #0b4966;
+  padding: 1rem;
+  grid-column: 1 / 4;  
+}
+
+#course-title {
+    font-size: 1.5rem;
+}
+
+main, footer {
+  font-family: var(--body-font);
+}
+
+main {
+  display: grid;
+  padding: 0.5rem;
+  grid-column: 1 / 4;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1{
+  display: flex;
+  grid-column: 1/4;
+  justify-content: center;
+}
+
+.card-left {
+  grid-column: 1 / 3;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(0 0 0 / 0.3);
+  margin: 5px;
+}
+
+.title-section{
+  border-radius: 0.5rem 0.5rem 0 0;
+  background: #0b4966;
+  color: #eee;
+  padding: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-right {
+  grid-column: 3 / 4;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(0 0 0 / 0.3);
+  margin: 5px;
+}
+
+footer {
+  background: #0b4966;
+  color: #eee;
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / 4;
+  margin: 5px 0px;
+}
+
+nav {
+  position: absolute;
+	margin: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+	max-width: auto;
+  font-weight: bold;
+}
+
+.navigation {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #111010;
+	align-items: center;
+}
+
+.navigation li {
+	flex: 1 1 auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
+}
+
+.navigation a {
+	display: block;
+	color: #eee;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navigation a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+	color: yellow;
+}
+
+
+.action-up {
+  display: grid;
+  grid-template: 1fr / 25% 50% 25%;
+  margin: 0 5px 0 0;
+  padding: .1rem;  
+  color: #333131;
+}
+
+.action-down {
+  display: grid;
+  grid-template: 1fr / 25% 50% 25%;
+  margin: 0 5px 0 0;
+  padding: .1rem;  
+  color: #333131;
+}
+
+.text-about{
+  grid-column: 1/3;
+  padding: 10px;
+}
+
+.photo-perfil{
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+.title-country{
+  display: flex;
+  grid-column: 1/3;
+  font-weight: bold;
+  justify-content: center;
+  margin: 0px 40px;
+  border-bottom: 1px solid rgb(0 0 0 / 0.3);
+}
+
+.flag-peru{
+  grid-column: 1/2;  
+}
+
+.text-country{
+  grid-column: 2/3;
+  padding: 10px;
+}
+
+figcaption{
+  font-size: small;
+}
+
+figure{
+  justify-self: center;
+  margin: 20px 0px;
+}
+
+img{
+  width: 120px;
+}
+
+.action-resources{
+  padding: 2rem;
+  margin: 20% 0px;
+}
+
+.datelastmodified{
+  color: #f7f315;
+  font-size: small;
+}

@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Arturo Romero</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Arturo Romero | Personal home page featuring projects created with HTML, CSS, and JavaScript.">
+    <meta name="author" content="Arturo Romero">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Romero</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/in/arturo-romero-rodriguez" title="LinkedIn">Home</a></li>
+                <li><a href="https://byupw.instructure.com/" title="Canvas">Projects</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/138?lang=spa" title="Scripture">Services</a></li>
+                <li><a href="#" title="Final Project">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Arturo Romero</h1>
+        <section class="card-left">
+            <div class="title-section">About Me</div>
+            <div class="action-up">                
+                <p class="text-about">
+                    My name is Arturo and I go by R2. I was born in Ventanilla Perú and live with my family in Lima. I am currently working as an software developer at a consultancy.
+                    my children are my world an I love spending time with them. I love to travel and I love to learn new things.
+                </p>
+                <img class="photo-perfil" src="images/photo-carnet.jpg" alt="Profile photo of Arturo Romero">
+                <p class="title-country">
+                    Lima, Perú
+                </p>                
+            </div>
+            <div class="action-down">
+                <figure>
+                    <img class="flag-peru" src="images/flag-peru.webp" alt="Flag of Peru">
+                    <figcaption>Oficial Flag of Perú</figcaption>
+                </figure>
+                <p class="text-country">
+                    Lima is the capital of Peru, located on the country's arid Pacific coast. Although its colonial center is preserved, it is a
+                     bustling metropolis and one of the largest cities in South America.
+                </p>
+            </div>
+        </section>
+        <section class="card-right">
+            <div class="title-section">Web Dev Resources</div>
+            <div class="action-resources">
+                <ul>
+                    <li>Dev.to Community</li>
+                    <li>Smashing Magazine</li>
+                    <li>CSS Trick</li>
+                    <li>W3 Schools</li>
+                    <li>Udemy</li>
+                    <li>Iamge Palceholder</li>
+                </ul>
+            </div>           
+        </section>
+    </main>
+    <footer>
+        <p>
+            <span id="currentyeaar"></span> 🌊 Arturo Antonio Romero 🌊 Perú
+        </p>
+        <p class="datelastmodified">
+            Last Modification:<span id="lastModified"></span> 
+        </p>
+    </footer>
 </body>
 </html>
