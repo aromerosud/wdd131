@@ -19,6 +19,8 @@
 	}
 
     nav {
+        display: flex;
+        justify-content: end;
         margin: 0;
         width: 100%;
         font-weight: bold;
