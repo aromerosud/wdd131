@@ -1,0 +1,121 @@
+.main-temples{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {  
+    margin: 0 auto; 
+    min-width: 420px;
+    max-width: 800px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header, footer{
+    background-color: #350357;
+    color: #eee;    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+}
+
+#course-title {
+    display: flex;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0px 10px;
+    align-items: center;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 2rem;
+	border: 0;
+	background: none;
+	color: #fff;
+	position: absolute;
+	top: 10%;
+	right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+	color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+    
+.navigation a:hover {
+    background-color: #ffffff;
+    color: #350357;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+    font-size: 1.5rem;
+}
+
+figcaption{
+    font-size: small;
+    text-align: center;
+    padding: 5px;
+    color: #350357;
+}
+
+figure{
+    width: 100%;
+    justify-self: center;
+    margin: 0px;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+h1{
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / 4;
+  margin: 5px 0px;
+}
