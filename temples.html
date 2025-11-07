@@ -16,7 +16,7 @@
 <body>
     <header>
         <span id="course-title">Temple Album</span>
-        <button id="menu"></button>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
         <nav>
             <ul class="navigation">
                 <li><a href="#" title="Home">Home</a></li>
@@ -31,7 +31,7 @@
         <h1>Home</h1>
         <div class="main-temples">
             <figure>
-                <img src="images/lima-peru-temple.jpg" alt="Photo of a temple in Lima, Peru">
+                <img src="images/lima-peru-temple.jpg" alt="Photo of a temple in Lima, Peru" fetchpriority="high">
                 <figcaption>Lima Perú</figcaption>
             </figure>
             <figure>
@@ -70,7 +70,7 @@
     </main>
     <footer>
         <p>
-            <span id="currentyeaar"></span> 🌊 Arturo Antonio Romero 🌊 Perú
+            <span id="currentyear"></span> 🌊 Arturo Antonio Romero 🌊 Perú
         </p>
         <p class="datelastmodified">
             Last Modification:<span id="lastModified"></span> 
