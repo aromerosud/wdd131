@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {  
+    margin: 0 auto; 
+    max-width: 1000px;
+    min-width: 400px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header, footer{
+    background-color: #6e0606;
+    color: #eee;    
+}
+
+header {
+  position: relative;
+  padding: 1rem;
+  text-align: center;
+}
+
+#course-title {
+    font-size: 2rem;
+}
+
+main {
+    position: relative;
+}
+
+.hero {    
+    border-top: 15px solid #b1b5b6;
+    border-bottom: 5px solid #6e0606;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+#data {
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.2;
+  padding: 10px;
+}
+
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.label {
+  font-weight: bold;
+  text-align: right;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.value {
+  text-align: left;
+  flex: 1;
+  font-weight: normal;
+}
+
+#weather {
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.2;
+  padding: 10px;
+}
+
+.weather-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.image-weather {
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
