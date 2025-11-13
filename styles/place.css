@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #6e0606;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -11,7 +15,7 @@ body {
 }
 
 header, footer{
-    background-color: #6e0606;
+    background-color: var(--primary-color);;
     color: #eee;    
 }
 
@@ -31,7 +35,7 @@ main {
 
 .hero {    
     border-top: 15px solid #b1b5b6;
-    border-bottom: 5px solid #6e0606;
+    border-bottom: 5px solid var(--primary-color);;
 }
 
 .hero img {
