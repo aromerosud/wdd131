@@ -9,9 +9,10 @@
 
 body {  
     margin: 0 auto; 
-    max-width: 1000px;
+    width: 95%;
     min-width: 400px;
     font-family: 'Roboto', sans-serif;
+    height: auto;
 }
 
 header, footer{
@@ -42,6 +43,8 @@ main {
   display: block;
   width: 100%;
   height: auto;
+  max-height: 775px;
+  object-fit: cover;
 }
 
 h2 {
