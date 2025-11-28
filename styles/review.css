@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #360a2f;
+}
+
+main p {
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    background: #fafafa;
+    border-left: 6px solid var(--primary-color);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+}
+
+main span#reviews-count {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
