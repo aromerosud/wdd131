@@ -1,20 +1,29 @@
 :root {
   --primary-color: #360a2f;
+  --secondary-color: #ccc;
+  --background-color: #fafafa;
+  --text-light: #eee;
+  --text-dark: #000;
 }
 
 * {
   margin: 0;
 	padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto; 
+  min-width: 400px;
+  margin: 0 auto;
+  padding: 0 1rem;
   font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-dark);
 }
 
 header, footer {
   background-color: var(--primary-color);
-  color: #eee;    
+  color: var(--text-light);   
 }
 
 header {
@@ -108,8 +117,9 @@ textarea {
   height: 0;
   pointer-events: auto;
 }
+
 .stars label {
-  color: #ccc;
+  color: var(--secondary-color);
   font-size: 2rem;
   width: 30px;
   cursor: pointer;
@@ -120,11 +130,15 @@ textarea {
   content: "★";
 }
 
-.stars input:checked ~ label,
+.stars input:checked ~ label {
+  color: gold;
+}
+
 .stars label:hover,
 .stars label:hover ~ label {
-    color: gold;
+  color: gold;
 }
+
 
 input[type="submit"] {
   padding: 0.8rem;
