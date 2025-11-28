@@ -23,7 +23,6 @@ body {
   max-width: 100%;
   min-width: 400px;
   margin: 0 auto;
-  padding: 0 1rem;
   font-family: 'Roboto', sans-serif;
   background-color: var(--background-color);
   color: var(--text-dark);
