@@ -42,6 +42,7 @@ header {
 }
 
 form {
+  width: 100%;
   max-width: 600px;
   margin: 2rem auto;
   padding: 1.5rem;
@@ -51,6 +52,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  box-sizing: border-box
 }
 
 .fset1 {
