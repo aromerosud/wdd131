@@ -4,17 +4,17 @@
   --background-color: #fafafa;
   --text-light: #eeeeee;
   --text-dark: #000000;
-  --shadow-light: #00000014; /* rgba(0,0,0,0.08) en hex con alpha */
+  --shadow-light: #00000014;
   --error-color: #ff0000;
   --success-color: #063f06;
   --submit-hover-color: #4a1255;
-  --star-color: #cccccc; /* gris de estrellas no marcadas */
+  --star-color: #cccccc;
   --star-gold: #ffd700;
 }
 
 * {
   margin: 0;
-	padding: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -29,7 +29,7 @@ body {
 
 header, footer {
   background-color: var(--primary-color);
-  color: var(--text-light);   
+  color: var(--text-light);
 }
 
 header {
@@ -79,7 +79,7 @@ input[type="date"],
 textarea {
   width: 100%;
   padding: 0.6rem;
-  border: 1px solid var(--secondary-color);;
+  border: 1px solid var(--secondary-color);
   border-radius: 6px;
   font-size: 1rem;
   outline: none;
@@ -89,7 +89,7 @@ select:focus,
 input:focus,
 textarea:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 4px rgba(54, 10, 47, 0.4);
+  box-shadow: 0 0 4px var(--shadow-light);
 }
 
 textarea {
@@ -114,6 +114,7 @@ textarea {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  position: relative;
 }
 
 .stars input[type="radio"] {
@@ -125,7 +126,7 @@ textarea {
 }
 
 .stars label {
-  color: var(--secondary-color);
+  color: var(--star-color);
   font-size: 2rem;
   width: 30px;
   cursor: pointer;
@@ -145,12 +146,11 @@ textarea {
   color: var(--star-gold);
 }
 
-
 input[type="submit"] {
   padding: 0.8rem;
   border: none;
   background-color: var(--primary-color);
-  color: var(--text-light);;
+  color: var(--text-light);
   font-size: 1.1rem;
   border-radius: 6px;
   cursor: pointer;
