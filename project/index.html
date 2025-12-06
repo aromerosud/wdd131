@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suu's Papercraft Place – Home</title>
+    <meta name="description" content="Handmade papercraft models created by Arturo Romero. Discover creative paper designs, tutorials, and featured projects.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/papercraft.css">
+    <link rel="stylesheet" href="styles/papercraft-large.css">
+    <script src="scripts/papercraft.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="course-title">Papercraft</span>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-main">
+
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-papercraft-large.webp" media="(min-width: 750px)">
+                <img src="images/hero-papercraft-small.webp" alt="Beautiful handmade papercraft models" fetchpriority="high">
+            </picture>
+
+            <div class="hero-text">
+                <h1>Welcome to Suu's Papercraft Place</h1>
+                <p>Creative handmade papercraft designs inspired by imagination and detail.</p>
+                <a href="#gallery" class="hero-btn">Explore Models</a>
+            </div>
+        </section>
+
+        <section class="featured" id="gallery">
+            <h2>Featured Papercraft Models</h2>
+
+            <div class="papercraft-grid">
+
+                <article class="card">
+                    <img class="lazy" data-src="images/papercraft1-small.webp" src="images/placeholder.webp" alt="Papercraft Model 1">
+                    <h3>Fox Papercraft</h3>
+                    <p>A charming geometric fox design with warm colors and clean folds.</p>
+                </article>
+
+                <article class="card">
+                    <img class="lazy" data-src="images/papercraft2-small.webp" src="images/placeholder.webp" alt="Papercraft Model 2">
+                    <h3>Cat Papercraft</h3>
+                    <p>Elegant low-poly cat model perfect for display and decoration.</p>
+                </article>
+
+                <article class="card">
+                    <img class="lazy" data-src="images/papercraft3-small.webp" src="images/placeholder.webp" alt="Papercraft Model 3">
+                    <h3>Mini House</h3>
+                    <p>Small paper house ideal for beginners learning precision cutting.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="review-counter">
+            <p>You have submitted <span id="reviews-count">0</span> reviews so far.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span> 🌊 Arturo Antonio Romero 🌊 Perú</p>
+        <p class="datelastmodified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+@media screen and (min-width: 750px){
+
+    #menu { 
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75rem 1.2rem;
+    }
+
+    /* HERO HOME -------------------------------------------------------- */
+    .hero-text {
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        max-width: 450px;
+        background-color: #ffffffcc;
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.6rem;
+    }
+
+    /* FEATURED GRID ------------------------------------------------ */
+    .papercraft-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+    }
+
+    /* ABOUT PAGE ---------------------------------------------------- */
+    .about-values {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1000px;
+        margin: 2rem auto;
+    }
+
+    .value-card {
+        transition: transform 0.25s;
+    }
+
+    .value-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .about-section p {
+        font-size: 1.1rem;
+    }
+
+    /* CONTACT PAGE -------------------------------------------------- */
+    .contact-main {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .contact-hero .hero-text h1 {
+        font-size: 2.8rem;
+    }
+    .contact-hero {
+        position: relative;
+    }
+
+    .hero-text {
+        display: block;
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        background-color: #ffffffcc;
+        padding: 0.7rem 1rem;
+        border-radius: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.8rem;
+        color: #2b1a0e;
+        font-weight: bold;
+        margin: 0;
+    }
+
+
+    form {
+        width: 70%;
+        margin: auto;
+    }
+
+    #reason-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+}

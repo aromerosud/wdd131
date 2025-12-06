@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Contact Us – Suu's Papercraft Place</title>
+    <meta name="description" content="Contact form for Suu's Papercraft Place. Send us your questions or suggestions.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="styles/papercraft.css">  
+    <link rel="stylesheet" href="styles/papercraft-large.css">  
+    <script src="scripts/papercraft.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="course-title">Papercraft</span>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a class="active" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <!-- HERO IMAGE -->
+        <section class="contact-hero">
+            <picture>
+                <source srcset="images/contact-hero-large.webp" media="(min-width: 750px)">
+                <img src="images/contact-hero-small.webp" fetchpriority="high" alt="Contact Papercraft" width="600" height="400">
+            </picture>
+
+            <div class="hero-text">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you! Choose a reason and send your message below.</p>
+            </div>
+        </section>
+
+        <!-- FORM CONTAINER WITH BORDER -->
+        <section class="contact-form-container">
+            <!-- DROPDOWN CREATED IN JS -->
+            <div class="reason-section">
+                <h2>Reason for Contact</h2>
+                <div id="reason-container"></div>
+            </div>
+
+            <!-- FORM -->
+            <div class="form-section">
+                <h2>Send a Message</h2>
+
+                <form id="contact-form">
+
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" required>
+
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" required>
+
+                    <label for="message">Message *</label>
+                    <textarea id="message" rows="5" required></textarea>
+
+                    <button type="submit" id="send-btn">Send Message</button>
+
+                    <p id="form-response" class="hidden"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <p><span id="currentyear"></span> 🌊 Arturo Antonio Romero 🌊 Perú</p>
+    <p class="datelastmodified">Last Modified: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>
